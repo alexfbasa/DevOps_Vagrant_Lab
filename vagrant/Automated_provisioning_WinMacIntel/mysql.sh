@@ -9,7 +9,7 @@ sudo yum install mariadb-server -y
 # starting & enabling mariadb-server
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
-cd /tmp/
+cd /tmp/ || exit
 git clone -b main https://github.com/hkhcoder/vprofile-project.git
 #restore the dump file for the application
 sudo mysqladmin -u root password "$DATABASE_PASS"

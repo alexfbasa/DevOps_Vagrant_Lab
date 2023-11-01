@@ -1,4 +1,5 @@
 #!/bin/bash
+export LC_ALL="en_US.UTF-8"
 sudo dnf install epel-release -y
 sudo dnf install memcached -y
 sudo systemctl start memcached
